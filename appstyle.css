@@ -6,6 +6,12 @@ body{
   main{
     margin-left: 11%;
   }
+  a{
+    color: white;
+  }
+  a:hover, .search{
+    color:#04AA6D;
+  }
   .heading{
     background: rgba(30,30,30,0.35);
   }
@@ -13,11 +19,15 @@ body{
     font-family: 'Lucida Console', monospace;
   }
   .bright{
-    filter: brightness(550%);
+    filter: brightness(250%);
     opacity: 2;
   }
   .account{
     padding: 10%;
+  }
+  .btn-bikers{
+    background-color: #04AA6D;
+    color: white;
   }
 
     /* Icon bars */

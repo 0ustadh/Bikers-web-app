@@ -30,7 +30,8 @@
         <link rel="stylesheet" href="appstyle.css">
         <script defer src="appscripts.js"></script>
     </head>
-    <body onload="document.getElementById('default').click();">
+    <body onload="document.getElementById('default').click(); 
+    document.getElementById('follow').click();">
 
       <!-- Forms -->
             <!-- Sign up form -->
@@ -76,7 +77,7 @@
                       continue.</div>
                   </label>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-bikers">Submit</button>
               </form>
             </div>
 
@@ -115,7 +116,7 @@
                       continue.</div>
                   </label>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-bikers">Submit</button>
               </form>
             </div>
             <!-- Forms end -->
@@ -200,8 +201,8 @@
                 <form class="mb-5 mt-3">
                   <input type="text" placeholder="Search service/s here.." 
                   name="search">
-                  <button type="submit" title="Search"><i class="fa fa-search">
-                  </i></button>
+                  <button type="submit" title="Search"><i class="fa fa-search
+                     search"></i></button>
                 </form>
                 <div class="container">
                   <h1 class="mb-3 text-center">What we offer</h1>
@@ -280,8 +281,9 @@
                   <h1 class="display-2"><i class="fa fa-user-circle"></i></h1>
                   <h5>Log in</h5>
                   <p>Get we started biking and cycling!</p>
-                  <button type="button" class="btn btn-lg btn-primary" 
-                  onclick="document.getElementById('login').style.display='block'">Login</button>
+                  <button type="button" class="btn btn-lg btn-bikers" 
+                  onclick="document.getElementById('login').style.display='block'">
+                  Login</button>
                 </div>
               </section>
               <!-- Messages end -->
@@ -289,12 +291,66 @@
               <!-- News -->
               <section id="news" class="tabcontent">
                 <header><h3 class="mb-3 heading">News</h3></header>
+                <!-- Tabs inside tab -->
+                <div class="container">
+                  <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" onclick="showTab(event, 
+                      'following')" id="follow">Following</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" onclick="showTab(event, 
+                      'nearby')">Nearby</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" onclick="showTab(event, 
+                      'regional')">Regional</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" onclick="showTab(event, 
+                      'national')">National</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" onclick="showTab(event, 
+                      'global')">Global</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Contents -->
+                <article id="following" class="contents">
+                  <h1>Lorem ipsum dolor</h1>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </article>
+
+                <article id="nearby" class="contents">
+                  <h1>Give me some sunshine</h1>
+                  <p>Kandhon ko kitabon ke bojh ne jhukaya.</p>
+                </article>
+
+                <article id="regional" class="contents">
+                  <h1>Ang balita ngayon</h1>
+                  <p>Kandhon ko kitabon ke bojh ne jhukaya.</p>
+                </article>
+
+                <article id="national" class="contents">
+                  <h1>Lorem ipsum</h1>
+                  <p>Kandhon ko kitabon ke bojh ne jhukaya.</p>
+                </article>
+
+                <article id="global" class="contents">
+                  <h1>Give me some sunshine</h1>
+                  <p>Give me some sunshine, give me some rain!</p>
+                </article>
+                <!-- Contents end -->
+                <!-- Tabs inside tab end -->
               </section>
               <!-- News end -->
 
               <!-- Profile -->
               <section id="userprof" class="tabcontent">
                 <header><h3 class="mb-3 heading">Profile</h3></header>
+
+                <h1 class="display-4 p-5"><b>My Account</b></h1>
               </section>
               <!-- Profile end -->
 

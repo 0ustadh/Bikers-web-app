@@ -36,7 +36,7 @@ window.onclick = function(event) {
 
 // Tab contents
 function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
+    let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
@@ -62,17 +62,17 @@ for (let b = 0; b <= hd.length; b++){
   hd[b].classList.add("bright");
 }
 
-// not yet working
-const ib = document.getElementsByClassName("icon-bar");
-const cb = ib.querySelector("a");
-
-if (window.orientation == "portrait") {
-  ib[0].style.marginBottom = 0;
-  ib[0].style.width = "100%";
-  ib[0].style.overflow = "auto";
-  cb[0].style.float = "left"
-  cb[0].style.width = "20%";
-  cb[0].style.textAlign = "center";
-  cb[0].style.padding = "0.75rem 0";
-  cb[0].style.fontSize = "2.5rem";
+// Show tabs (Tabs inside tab)
+function showTab(event, tabNames){
+  let j, tabcontents, navLink;
+  tabcontents = document.getElementsByClassName("contents");
+  for (j = 0; j < tabcontents.length; j++) {
+    tabcontents[j].style.display = "none";
+  }
+  navLink = document.getElementsByClassName("nav-link");
+  for (j = 0; j < navLink.length; j++) {
+    navLink[j].className = navLink[j].className.replace(" active", "");
+  }
+  document.getElementById(tabNames).style.display = "block";
+  event.currentTarget.className += " active";
 }
