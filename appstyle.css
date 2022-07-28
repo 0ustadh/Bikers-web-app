@@ -29,6 +29,43 @@ body{
     background-color: #04AA6D;
     color: white;
   }
+  .f-left{
+    float: left;
+    margin-right: 0.5rem;
+  }
+  #userprof .buttons{
+    padding: 0.25% 10% 2% 4%;
+  }
+  #userprof button, #homepage button{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #homepage button{
+    margin-top: 2%;
+  }
+  #homepage button i{
+    font-size: 3.5rem;
+  }
+  #userprof i{
+    font-size: 3rem;
+  }
+  .signup{
+    font-style: italic;
+    font-weight: bold;
+  }
+  .contents{
+    padding: 5% 5% 5% 0;
+    margin-bottom: 1%;
+  }
+  .contents .jumbotron{
+    color: black;
+  }
+  .tabcontent button:hover, .contents button:hover{
+    background-color: #04AA6D;
+  }
+  .carousel{
+    margin-bottom: 3%;
+  }
 
     /* Icon bars */
     .icon-bar {

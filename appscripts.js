@@ -76,3 +76,19 @@ function showTab(event, tabNames){
   document.getElementById(tabNames).style.display = "block";
   event.currentTarget.className += " active";
 }
+
+// Onclick buttons
+function login() {
+  document.getElementById("login").style.display = "block";
+}
+function signup() {
+  document.getElementById("signup").style.display = "block";
+}
+
+// Close buttons
+function closeLogin() {
+  document.getElementById("login").style.display = "none";
+}
+function closeSignup() {
+  document.getElementById("signup").style.display = "none";
+}
