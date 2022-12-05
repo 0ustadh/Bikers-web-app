@@ -8,6 +8,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- End of Metadata -->
 
+        <!-- For indexing/SEO -->
+        <meta name="description" content="Improving Bikers' Experience!">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="Bike, Biking, Cycling">
+        <meta property='og:title' content="Bikers.com">
+        <meta property='og:description' content="Improving Bikers' Experience!">
+        <meta property='og:image' content="logo.png">
+        <!-- SEO end -->
+
+        <!-- Icon on title bar -->
+        <link rel="icon" href="logo.png" type="image/icon type">
+
         <!-- Stylesheets (CSS) -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,8 +42,8 @@
         <link rel="stylesheet" href="appstyle.css">
         <script defer src="appscripts.js"></script>
     </head>
-    <body onload="document.getElementById('default').click(); 
-    document.getElementById('follow').click();">
+    
+    <body onload="onLoad()">
 
       <!-- Forms -->
             <!-- Sign up form -->
@@ -150,7 +162,7 @@
                     services are here!</small>
                   </p>
                   <div class="container">
-                    <h1 class="mb-3">Trending:</h1>
+                    <h2 class="mb-3">Trending:</h2>
                     <!-- Carousel -->
                     <div id="carousel" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
@@ -164,17 +176,17 @@
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <a href="#">
-                          <img class="img-fluid" src="giant.png" alt="Giant">
+                          <img class="img-fluid" src="giant.png" alt="Giant" title="Giant">
                           </a>
                         </div>
                         <div class="carousel-item">
                           <a href="#">
-                          <img class="img-fluid" src="trinx.png" alt="Trinx">
+                          <img class="img-fluid" src="trinx.png" alt="Trinx" title="Trinx">
                           </a>
                         </div>
                         <div class="carousel-item">
                           <a href="#">
-                          <img class="img-fluid" src="foxter.png" alt="Foxter">
+                          <img class="img-fluid" src="foxter.png" alt="Foxter" title="Foxter">
                           </a>
                         </div>
                       </div>
@@ -216,7 +228,7 @@
                      search"></i></button>
                 </form>
                 <div class="container">
-                  <h1 class="mb-3 text-center">What we offer</h1>
+                  <h2 class="mb-3 text-center">What we offer</h2>
                   <!-- Carousel -->
                   <div id="demo" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -230,17 +242,17 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <a href="#">
-                        <img class="img-fluid" src="trinx.png" alt="Los Angeles">
+                        <img class="img-fluid" src="trinx.png" alt="Trinx" title="Trinx">
                         </a>
                       </div>
                       <div class="carousel-item">
                         <a href="#">
-                        <img class="img-fluid" src="giant.png" alt="Chicago">
+                        <img class="img-fluid" src="giant.png" alt="Giant" title="Giant">
                         </a>
                       </div>
                       <div class="carousel-item">
                         <a href="#">
-                        <img class="img-fluid" src="foxter.png" alt="New York">
+                        <img class="img-fluid" src="foxter.png" alt="Foxter" title="Foxter">
                         </a>
                       </div>
                     </div>
@@ -255,7 +267,7 @@
                     </a>
                   </div>
                   <!-- Carousel end -->
-                  <h1 class="mb-3 text-center">Brands</h1>
+                  <h2 class="mb-3 text-center">Brands</h2>
                   <!-- Carousel -->
                   <div id="brands" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -269,17 +281,17 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <a href="#">
-                        <img class="img-fluid" src="foxter.png" alt="Los Angeles">
+                        <img class="img-fluid" src="foxter.png" alt="Foxter" title="Foxter">
                         </a>
                       </div>
                       <div class="carousel-item">
                         <a href="#">
-                        <img class="img-fluid" src="trinx.png" alt="Chicago">
+                        <img class="img-fluid" src="trinx.png" alt="Trinx" title="Trinx">
                         </a>
                       </div>
                       <div class="carousel-item">
                         <a href="#">
-                        <img class="img-fluid" src="giant.png" alt="New York">
+                        <img class="img-fluid" src="giant.png" alt="Giant" title="Giant">
                         </a>
                       </div>
                     </div>
@@ -301,7 +313,7 @@
               <section id="account" class="tabcontent">
                 <header><h3 class="mb-3 heading">Messages</h3></header>
                 <div class="container text-center account">
-                  <h1 class="display-2"><i class="fa fa-user-circle"></i></h1>
+                  <h2 class="display-2"><i class="fa fa-user-circle"></i></h2>
                   <h5>Log in</h5>
                   <p>Get we started biking and cycling!</p>
                   <button type="button" class="btn btn-lg btn-bikers" 
@@ -343,21 +355,21 @@
 
                   <div class="container">
                     <div class="jumbotron">
-                      <h1>Lorem ipsum dolor</h1>
+                      <h2>Lorem ipsum dolor</h2>
                       <p>Lorem ipsum dolor sit amet</p>
                     </div>
                   </div>
 
                   <div class="container">
                     <div class="jumbotron">
-                      <h1>Lorem ipsum</h1>
+                      <h2>Lorem ipsum</h2>
                       <p>Kandhon ko kitabon ke bojh ne jhukaya.</p>
                     </div>
                   </div>
 
                   <div class="container">
                     <div class="jumbotron">
-                      <h1>Add some content if you want</h1>
+                      <h2>Add some content if you want</h2>
                     </div>
                   </div>
 
@@ -367,14 +379,14 @@
 
                   <div class="container">
                     <div class="jumbotron">
-                      <h1>Give me some sunshine</h1>
+                      <h2>Give me some sunshine</h2>
                       <p>Kandhon ko kitabon ke bojh ne jhukaya.</p>
                       </div>
                     </div>
 
                     <div class="container">
                       <div class="jumbotron">
-                        <h1>Add some content if you want</h1>
+                        <h2>Add some content if you want</h2>
                       </div>
                     </div>
 
@@ -384,14 +396,14 @@
 
                   <div class="container">
                     <div class="jumbotron">
-                      <h1>Ang balita ngayon</h1>
+                      <h2>Ang balita ngayon</h2>
                       <p>Kandhon ko kitabon ke bojh ne jhukaya.</p>
                      </div>
                     </div>
 
                     <div class="container">
                       <div class="jumbotron">
-                        <h1>Add some content if you want</h1>
+                        <h2>Add some content if you want</h2>
                       </div>
                     </div>
 
@@ -401,14 +413,14 @@
 
                   <div class="container">
                     <div class="jumbotron">
-                      <h1>Lorem ipsum</h1>
+                      <h2>Lorem ipsum</h2>
                       <p>Kandhon ko kitabon ke bojh ne jhukaya.</p>
                     </div>
                   </div>
 
                   <div class="container">
                     <div class="jumbotron">
-                      <h1>Add some content if you want</h1>
+                      <h2>Add some content if you want</h2>
                     </div>
                   </div>
 
@@ -418,21 +430,21 @@
 
                   <div class="container">
                     <div class="jumbotron">
-                      <h1>Give me some sunshine</h1>
+                      <h2>Give me some sunshine</h2>
                       <p>Give me some sunshine, give me some rain!</p>
                       </div>
                       </div>
 
                       <div class="container">
                         <div class="jumbotron">
-                          <h1>Lorem ipsum</h1>
+                          <h2>Lorem ipsum</h2>
                           <p>Kandhon ko kitabon ke bojh ne jhukaya.</p>
                         </div>
                       </div>
 
                       <div class="container">
                         <div class="jumbotron">
-                          <h1>Add some content if you want</h1>
+                          <h2>Add some content if you want</h2>
                         </div>
                       </div>
 
@@ -446,7 +458,7 @@
               <section id="userprof" class="tabcontent">
                 <header><h3 class="mb-3 heading">Profile</h3></header>
 
-                <h1 class="display-4 p-5"><b>My Account</b></h1>
+                <h2 class="display-4 p-5"><b>My Account</b></h2>
 
                 <section class="buttons">
 

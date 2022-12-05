@@ -92,3 +92,9 @@ function closeLogin() {
 function closeSignup() {
   document.getElementById("signup").style.display = "none";
 }
+
+// Body onload
+function onLoad(){
+  document.getElementById('default').click(); 
+  document.getElementById('follow').click();
+}
